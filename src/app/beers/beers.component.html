@@ -1,0 +1,11 @@
+<div *ngFor="let beer of beers" >
+  <img [src]="beer.image_url">
+  <h3>
+    {{beer.name}}
+  </h3>
+  <p>{{beer.tagline}}</p>
+  <p>First Brewed :{{beer.first_brewed}}</p>
+  <p>Description:{{beer.description}}</p>
+  <p>Tips:{{beer.brewers_tips}}</p>
+  <p>Pair with:{{beer.food_pairing}}</p>
+</div>

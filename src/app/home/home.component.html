@@ -1,0 +1,17 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<div class="row">
+<div class="column" *ngFor = "let beer of beers index as bid">
+    <div class="content">
+      <img [src]="beer.image_url" style="width:100%">
+      <h3>
+        <a [title]="beer.name" [routerLink]="['beer',bid+1]">
+          {{beer.name}}
+        </a>
+      </h3>
+      <p>{{beer.tagline}}</p>
+      
+    </div>
+    </div>
+    </div>
+</body>
